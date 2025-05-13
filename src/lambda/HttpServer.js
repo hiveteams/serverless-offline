@@ -27,7 +27,7 @@ export default class HttpServer {
 
     this.#server = new Server(serverOptions)
 
-    attachHttpHooks(this.#server, this.#serverless)
+    attachHttpHooks(this.#server, this.#serverless);
   }
 
   async start() {
